@@ -1,5 +1,5 @@
-POSTCHANNEL = -1001898159485
-GENERALCHANNEL = "https://t.me/+DptrL_kyEEw5YWU1"
+POSTCHANNEL = -1001865177630
+GENERALCHANNEL = "https://t.me/+UqmJ_n4USiAjngDq"
 PostText ="""<b>{}🥰
   
 {}
@@ -10,6 +10,6 @@ PostText ="""<b>{}🥰
 ✅ ᴊᴏɪɴ ɴᴏᴡ ꜰᴏʀ ᴍᴏʀᴇ ᴠɪᴅᴇᴏꜱ!
 {}
   </b>"""
-AuthUser = [1023650988,1958848922]
+AuthUser = [608824855]
 AdText = """<a href='{}'>🔞 Join Our Private Channel
 🔞 Join Our Private Channel</a>"""
