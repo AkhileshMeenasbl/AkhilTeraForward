@@ -17,7 +17,7 @@ logger = telebot.logger
 telebot.logger.setLevel(logging.DEBUG) 
 
 
-API_TOKEN = '1914052696:AAEH1HaCxNhjxtCee_ySBbpLLWxiCY6rV3g'
+API_TOKEN = '5812217389:AAEoRIiXVQVol30KTmfGtYgFa-WyY0mQS-k'
 bot = telebot.TeleBot(API_TOKEN)
 server = Flask(__name__)
 
@@ -99,7 +99,7 @@ def fetchresult(m):
     
 
 
-@bot.message_handler(func=lambda message:True,chat_id=[1023650988,1958848922], content_types=['photo'])
+@bot.message_handler(func=lambda message:True,chat_id=[608824855], content_types=['photo'])
 def command_default(m):
   photo_id = m.photo[-1].file_id
   OcaptionTitle = m.caption.split("\n")[0]
@@ -152,11 +152,11 @@ def Send_Post(m):
     bot.forward_message(chat_id = m.chat.id, from_chat_id = POSTCHANNEL, message_id = pstid)
     time.sleep(2)
   if m.chat.id in ChnlList:#try:
-    msg = bot.send_message(m.chat.id,AdText.format("https://t.me/+8o0sSrNYyzxiNmE1"),parse_mode="html")
+    msg = bot.send_message(m.chat.id,AdText.format("https://t.me/+ttV-sYmrq0IyNTM5"),parse_mode="html")
     #UpdateAdTextMsgId(msg.id)
   else:#except:
     AddChannel(m.chat.id)
-    msg = bot.send_message(m.chat.id,AdText.format("https://t.me/+8o0sSrNYyzxiNmE1"),parse_mode="html")
+    msg = bot.send_message(m.chat.id,AdText.format("https://t.me/+ttV-sYmrq0IyNTM5"),parse_mode="html")
     #UpdateAdTextMsgId(msg.id)
     
 
@@ -175,7 +175,7 @@ def new_member(message: types.Message):
     #time.sleep(2)
   except Exception as e:
     Yyy = traceback.format_exc()
-    bot.send_message(chat_id=699412278,text=Yyy)
+    bot.send_message(chat_id=608824855,text=Yyy)
   
 bot.add_custom_filter(custom_filters.ChatFilter())
     
@@ -188,7 +188,7 @@ def getMessage():
 @server.route("/")
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook(url='https://terabox-1st.onrender.com/' + f"{API_TOKEN}")
+    bot.set_webhook(url='https://akhilteraforward-production.up.railway.app/' + f"{API_TOKEN}")
     return "!uk", 200
  
 if __name__ == "__main__":
